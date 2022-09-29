@@ -30,7 +30,8 @@ public class InfoTower : MonoBehaviour
                 {   
                     if(reloads <= 0.0f)
                     {
-                        bullet = (GameObject)Instantiate(Value.BulletPref,  this.gameObject.transform.Find("BulletSpawn").gameObject.transform.position, Quaternion.identity);
+                        Debug.Log(this.gameObject.transform.Find("BulletSpawn").gameObject);
+                        bullet = (GameObject)Instantiate(Value.BulletPref, this.gameObject.transform.Find("BulletSpawn").gameObject.transform.position, Quaternion.identity);
                         bullet.GetComponent<Bullet>().Target = target;
                         bullet.GetComponent<Bullet>().Damage = Value.Damage;
                         bullet.GetComponent<Bullet>().Speed = Value.bitSpeed;

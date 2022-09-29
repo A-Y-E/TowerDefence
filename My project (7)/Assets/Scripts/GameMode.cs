@@ -9,12 +9,12 @@ public class GameMode : MonoBehaviour
     public int CoutWave;
     public int CurWave;
 
-    public List<GameObject> shopTowers = new List<GameObject>();
+    /* public List<GameObject> shopTowers = new List<GameObject>();
     public List<GameObject> buttonTowers = new List<GameObject>();
     public List<GameObject> gameTowers = new List<GameObject>();
 
     private int K1, K2, _j;
-    private int numList = 1;
+    private int numList = 1; */
 
     public List<GameObject> GameUnits = new List<GameObject>();
     public List<Wave> Waves = new List<Wave>();
@@ -32,7 +32,7 @@ public class GameMode : MonoBehaviour
         _gameHUD = transform.GetComponent<GameHUD>();
         CoutWave = Waves.Count;
         CurWave = 0;
-        OnShop();
+        //nShop();
 
     }
 
@@ -73,7 +73,7 @@ public class GameMode : MonoBehaviour
     }
 
 
-    public void OnShop()
+    /* public void OnShop()
     {
         _j = 0;
         if(numList * buttonTowers.Count > shopTowers.Count)
@@ -96,6 +96,6 @@ public class GameMode : MonoBehaviour
             buttonTowers[_j].SetActive(true);
             _j++;
         }
-    }
+    } */
 }
 
