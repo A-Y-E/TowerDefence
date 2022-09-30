@@ -2669,7 +2669,6 @@ GameObject:
   - component: {fileID: 510584634}
   - component: {fileID: 510584636}
   - component: {fileID: 510584635}
-  - component: {fileID: 510584637}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -2739,18 +2738,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510584633}
   m_CullTransparentMesh: 1
---- !u!114 &510584637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510584633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d993026b0ead7243b8694e391b7fb4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &512465875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9315,21 +9302,6 @@ MonoBehaviour:
   CurWave: 0
   GameUnits: []
   Waves:
-  - Name: "\u0412\u043E\u043B\u043D\u0430 - 3"
-    Units:
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
-    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
   - Name: "\u0412\u043E\u043B\u043D\u0430 - 1"
     Units:
     - {fileID: 3856491884130566024, guid: 4fe8009e92a1736419b409405c630dc3, type: 3}
@@ -9382,6 +9354,21 @@ MonoBehaviour:
     - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
   - Name: "\u0412\u043E\u043B\u043D\u0430 - 3"
     Units:
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+  - Name: "\u0412\u043E\u043B\u043D\u0430 - 3"
+    Units:
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
+    - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
     - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
     - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}
     - {fileID: 7153635724232470013, guid: e0391f523ae039b4b8425053957587de, type: 3}

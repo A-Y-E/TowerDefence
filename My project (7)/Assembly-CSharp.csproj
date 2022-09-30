@@ -65,11 +65,11 @@
     <Compile Include="Assets\Scripts\InfoTower.cs" />
     <Compile Include="Assets\Scripts\SearchClasses\SearchLose.cs" />
     <Compile Include="Assets\Scripts\GameHUD.cs" />
+    <Compile Include="Assets\AnimTransition.cs" />
     <Compile Include="Assets\Scripts\InfoUnit.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\AnimTransition.cs" />
-    <Compile Include="Assets\RotationAnim.cs" />
     <Compile Include="Assets\Scripts\ButtonMain.cs" />
+    <Compile Include="Assets\RotationAnim.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
