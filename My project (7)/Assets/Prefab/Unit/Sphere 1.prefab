@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Value:
     Name: Unit 2
-    Health: 21
+    Health: 100
     Armor: 2
-    Speed: 0.7
+    Speed: 20
     Diamonds: 20

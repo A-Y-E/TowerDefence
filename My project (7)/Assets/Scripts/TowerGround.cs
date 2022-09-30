@@ -6,17 +6,25 @@ using UnityEngine.EventSystems;
 
 public class TowerGround : MonoBehaviour,  IPointerClickHandler
 {
+    public GameMode gameMode;
+
     public GameObject tower;
     public GameObject towerTwo;
+
 // Use this for initialization
     void Start () 
     {
         tower = (GameObject) Resources.Load("listTower_1");
+        
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-        GameObject spawnPoint = this.gameObject.transform.GetChild(0).gameObject;
-        Instantiate(tower, spawnPoint.transform.position, new Quaternion(0f, 0f, 0f, 0f));
+        if (gameMode.Diamonds >= tower.GetComponent<InfoTower>().Value.Cost)
+        {
+            gameMode.Diamonds -= tower.GetComponent<InfoTower>().Value.Cost;
+            GameObject spawnPoint = this.gameObject.transform.GetChild(0).gameObject;
+            Instantiate(tower, spawnPoint.transform.position, new Quaternion(0f, 0f, 0f, 0f));
+        }
     }
 }

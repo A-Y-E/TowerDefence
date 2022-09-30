@@ -22,8 +22,9 @@ public class InfoUnit : MonoBehaviour
             if(key <= gameMode.Areas.Count - 1)
             {
                 if (Vector3.Distance(transform.position, gameMode.Areas[key].transform.position) > 0.0f)
-                {
+                {  
                     transform.position = Vector3.MoveTowards(transform.position, gameMode.Areas[key].transform.position, Value.Speed * Time.deltaTime);
+                    
                 }else
                 {
                     key++;
@@ -37,6 +38,10 @@ public class InfoUnit : MonoBehaviour
             gameMode.LosesUnits++;
             gameMode.GameUnits.Remove(transform.gameObject);
             Destroy(transform.gameObject);
+            if(gameMode.LosesUnits > 9)
+            {
+                Debug.Log("Лох");
+            }
         }
         if(Value.Health < 0.0f)
         {

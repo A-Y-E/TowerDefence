@@ -734,7 +734,7 @@ MonoBehaviour:
     bitSpeed: 2
     BulletPref: {fileID: 4053485573075684147, guid: 85aba3b5043b7404bb2fb55da92ddfd0, type: 3}
     BulletSpawn: {fileID: 3781985719362694446}
-    Cost: 0
+    Cost: 10
 --- !u!1 &7588713789978968243
 GameObject:
   m_ObjectHideFlags: 0

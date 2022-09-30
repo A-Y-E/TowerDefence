@@ -10,6 +10,6 @@ public class Unit
     public float Health;
     public int Armor;
     public float Speed = 0.7f;
-    public int Diamonds;
+    public int Diamonds = 20;
 
 }

@@ -1,10 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameMode : MonoBehaviour
 {
-    public int Diamonds = 0;
+    public int Diamonds = 20;
     public int LosesUnits = 0;
     public int CoutWave;
     public int CurWave;
@@ -24,6 +23,8 @@ public class GameMode : MonoBehaviour
     private float timeUnit = 1.0f;
     private int key = 0;
     private bool created = true;
+    private GameObject _loseUI;
+    private GameObject _youWinUI;
 
     private GameHUD _gameHUD;
 
@@ -32,45 +33,52 @@ public class GameMode : MonoBehaviour
         _gameHUD = transform.GetComponent<GameHUD>();
         CoutWave = Waves.Count;
         CurWave = 0;
-        //nShop();
-
+        _loseUI = GameObject.FindObjectOfType<SearchLose>().gameObject;
+        _loseUI.SetActive(false);
+        _youWinUI.SetActive(false);
     }
 
     void Update()
     {
-        if(timeWave <= 0.0f && created)
+        if (timeWave <= 0.0f && created)
         {
-            if(CurWave <= CoutWave - 1)
+            if (CurWave <= CoutWave - 1)
             {
-                if(timeUnit <= 0.0f)
+                if (timeUnit <= 0.0f)
                 {
-                    if(key <= Waves[CurWave].Units.Count - 1)
+                    if (key <= Waves[CurWave].Units.Count - 1)
                     {
                         Debug.Log("Spawn Unit !");
                         GameUnits.Add((GameObject)Instantiate(Waves[CurWave].Units[key], Areas[0].transform.position, Quaternion.identity));
                         key++;
                         timeUnit = 1.0f;
-                    }else
+                    } else
                     {
                         CurWave++;
                         key = 0;
                         timeWave = 10.0f;
                         timeUnit = 1.0f;
                     }
-                }else
+                } else
                 {
                     timeUnit -= Time.deltaTime;
                 }
-            }else
+            } else
             {
-                Debug.Log("Level Complite!");
+                _youWinUI.SetActive(true);
                 created = false;
             }
-        }else
+        } else
         {
             timeWave -= Time.deltaTime;
         }
+
+        if (LosesUnits > 10)  {
+            _loseUI.SetActive(true);
+        }
     }
+
+    
 
 
     /* public void OnShop()
