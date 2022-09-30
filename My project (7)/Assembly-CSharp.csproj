@@ -63,10 +63,13 @@
     <Compile Include="Assets\Scripts\TowerGround.cs" />
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\InfoTower.cs" />
+    <Compile Include="Assets\Scripts\SearchClasses\SearchLose.cs" />
     <Compile Include="Assets\Scripts\GameHUD.cs" />
     <Compile Include="Assets\Scripts\InfoUnit.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\SearchClasses\SearchLose.cs" />
+    <Compile Include="Assets\AnimTransition.cs" />
+    <Compile Include="Assets\RotationAnim.cs" />
+    <Compile Include="Assets\Scripts\ButtonMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

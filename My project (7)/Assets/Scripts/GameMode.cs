@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMode : MonoBehaviour
 {
@@ -24,7 +26,6 @@ public class GameMode : MonoBehaviour
     private int key = 0;
     private bool created = true;
     private GameObject _loseUI;
-    private GameObject _youWinUI;
 
     private GameHUD _gameHUD;
 
@@ -35,7 +36,6 @@ public class GameMode : MonoBehaviour
         CurWave = 0;
         _loseUI = GameObject.FindObjectOfType<SearchLose>().gameObject;
         _loseUI.SetActive(false);
-        _youWinUI.SetActive(false);
     }
 
     void Update()
@@ -65,7 +65,6 @@ public class GameMode : MonoBehaviour
                 }
             } else
             {
-                _youWinUI.SetActive(true);
                 created = false;
             }
         } else
@@ -73,12 +72,17 @@ public class GameMode : MonoBehaviour
             timeWave -= Time.deltaTime;
         }
 
-        if (LosesUnits > 10)  {
+        if (LosesUnits > 10) {
             _loseUI.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
-    
+
+
 
 
     /* public void OnShop()
